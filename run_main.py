@@ -9,7 +9,7 @@ import argparse
 
 """parsing and configuration"""
 def parse_args():
-    desc = "Tensorflow implementation of 'Image Style Transfer Using Convolutional Neural Networks"
+    desc = "Tensorflow implementation of 'Image Style Transfer Using Convolutional Neural Networks By Junhwan Jang"
     parser = argparse.ArgumentParser(description=desc)
 
     parser.add_argument('--model_path', type=str, default='model', help='The directory where the pre-trained model was saved')
@@ -29,7 +29,7 @@ def parse_args():
 
     parser.add_argument('--initial_type', type=str, default='content', choices=['random','content','style'], help='The initial image for optimization (notation in the paper : x)')
     parser.add_argument('--max_size', type=int, default=512, help='The maximum width or height of input images')
-    parser.add_argument('--content_loss_norm_type', type=int, default=3, choices=[1,2,3], help='Different types of normalization for content loss')
+    parser.add_argument('--content_loss_norm_type', type=int, default=1, choices=[1,2,3], help='Different types of normalization for content loss')
     parser.add_argument('--num_iter', type=int, default=1000, help='The number of iterations to run')
 
     return check_args(parser.parse_args())
@@ -156,7 +156,6 @@ def main():
     # save result
     utils.save_image(result_image,args.output)
 
-    # utils.plot_images(content_image,style_image, result_image)
 
 if __name__ == '__main__':
     main()

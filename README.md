@@ -5,6 +5,9 @@ A tensorflow implementation of style transfer (neural style) described in the pa
 * [Image Style Transfer Using Convolutional Neural Networks](http://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf) : *published version*  
 by Leon A. Gatys, Alexander S. Ecker, Matthias Bethge
 
+## Results
+![](https://github.com/junhwanjang/neural-style-transfer/blob/master/images/cat.png)
+![](https://github.com/junhwanjang/neural-style-transfer/blob/master/results/cat_1013.jpg)
 
 ## Usage
 

@@ -6,7 +6,11 @@ A tensorflow implementation of style transfer (neural style) described in the pa
 by Leon A. Gatys, Alexander S. Ecker, Matthias Bethge
 
 ## Results
+- Original Image
 ![](https://github.com/junhwanjang/neural-style-transfer/blob/master/images/cat.png)
+- Style Image
+![](https://github.com/junhwanjang/neural-style-transfer/blob/master/images/style_cow.png)
+- Output Image
 ![](https://github.com/junhwanjang/neural-style-transfer/blob/master/results/cat_1013.jpg)
 
 ## Usage
